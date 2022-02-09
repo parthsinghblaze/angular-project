@@ -1,0 +1,20 @@
+<div class="container">
+
+<ul class="row py-5 list-unstyled">
+    <li class="col-md-3 " *ngFor="let product of product_list" >
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="product.image" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{product.title}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <button class="btn btn-primary" (click)="onSelect(product)">Get Details</button>
+            </div>
+        </div>
+
+
+
+    </li>
+
+</ul>
+</div>
